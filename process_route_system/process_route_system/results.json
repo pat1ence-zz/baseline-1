@@ -1,0 +1,591 @@
+{
+  "fea": {
+    "part_description": "The part is made of 15CrMo chromium-molybdenum alloy steel and has an overall rectangular shape. It features several characteristics: General Shape: Rectangular. Two through holes located along the central axis of the short sides, symmetrically positioned on both sides of the central axis. Two rectangular channels located on both sides of the central axis of the long sides, symmetrically placed. Four rectangular grooves positioned at the right angle formed by the intersection of the two rectangular channels. A flat reference surface ensuring tight integration with other components. Surface Treatment: Matte. Colour: White.",
+    "features": [
+      {
+        "feature_id": 0,
+        "feature_type": "flat_surface",
+        "face_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "description": "Main reference flat surface (top/bottom), area \u2248 large"
+      },
+      {
+        "feature_id": 1,
+        "feature_type": "through_hole",
+        "face_ids": [
+          10,
+          11
+        ],
+        "description": "Through hole #1, central axis short side, left"
+      },
+      {
+        "feature_id": 2,
+        "feature_type": "through_hole",
+        "face_ids": [
+          10,
+          11
+        ],
+        "description": "Through hole #2, central axis short side, right"
+      },
+      {
+        "feature_id": 3,
+        "feature_type": "rectangular_through_slot",
+        "face_ids": [
+          13,
+          14,
+          15
+        ],
+        "description": "Rectangular slot #1, long side left"
+      },
+      {
+        "feature_id": 4,
+        "feature_type": "rectangular_through_slot",
+        "face_ids": [
+          13,
+          14,
+          15
+        ],
+        "description": "Rectangular slot #2, long side right"
+      },
+      {
+        "feature_id": 5,
+        "feature_type": "rectangular_pocket",
+        "face_ids": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "description": "Rectangular pocket \u2014 4 pockets at slot intersections"
+      }
+    ],
+    "raw_stp": {
+      "faces": [],
+      "features": [
+        {
+          "feature_id": 0,
+          "feature_type": "flat_surface",
+          "face_ids": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "bottom_face_id": 0,
+          "description": "Main flat reference surface"
+        },
+        {
+          "feature_id": 1,
+          "feature_type": "through_hole",
+          "face_ids": [
+            10,
+            11
+          ],
+          "bottom_face_id": 10,
+          "description": "Through hole, left"
+        },
+        {
+          "feature_id": 2,
+          "feature_type": "through_hole",
+          "face_ids": [
+            10,
+            11
+          ],
+          "bottom_face_id": 10,
+          "description": "Through hole, right"
+        },
+        {
+          "feature_id": 3,
+          "feature_type": "rectangular_through_slot",
+          "face_ids": [
+            13,
+            14,
+            15
+          ],
+          "bottom_face_id": 14,
+          "description": "Rectangular slot, left long side"
+        },
+        {
+          "feature_id": 4,
+          "feature_type": "rectangular_through_slot",
+          "face_ids": [
+            13,
+            14,
+            15
+          ],
+          "bottom_face_id": 14,
+          "description": "Rectangular slot, right long side"
+        },
+        {
+          "feature_id": 5,
+          "feature_type": "rectangular_pocket",
+          "face_ids": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "bottom_face_id": 18,
+          "description": "Four rectangular pockets at slot intersections"
+        }
+      ],
+      "summary": "This part has 32 faces.\nThis part has 4 feature sets: flat_surface, through_hole\u00d72, rectangular_through_slot\u00d72, rectangular_pocket\u00d74."
+    },
+    "raw_image": {
+      "image_text": "1. General Shape: Rectangular block with multiple machined features symmetrically\n   distributed along the central axes of the long and short sides.\n\n2. Feature Description:\n   - Two through holes: Located along the central axis of the short sides,\n     symmetrically positioned on both sides of the central axis.\n   - Two rectangular channels: Located on both sides of the central axis of the\n     long sides, symmetrically placed. Pass through the entire part length.\n   - Four rectangular grooves: Positioned at the right angle formed by the\n     intersection of the two rectangular channels. Used for fixing during assembly.\n   - Flat reference surface: Main top and bottom faces ensuring tight integration\n     with mating components.\n   - Chamfers / rounded corners on all external edges.\n\n3. Surface Treatment: Matte\n4. Colour: White (likely engineering plastic or light alloy)\n5. Other Features: Symmetric layout suggests the part functions as a sliding-fit\n   assembly bracket.\n",
+      "feature_hints": [
+        "1. General Shape: Rectangular block with multiple machined features symmetrically",
+        "2. Feature Description:",
+        "Two through holes: Located along the central axis of the short sides,",
+        "Two rectangular channels: Located on both sides of the central axis of the",
+        "Four rectangular grooves: Positioned at the right angle formed by the",
+        "Flat reference surface: Main top and bottom faces ensuring tight integration",
+        "Chamfers / rounded corners on all external edges.",
+        "3. Surface Treatment: Matte",
+        "4. Colour: White (likely engineering plastic or light alloy)",
+        "5. Other Features: Symmetric layout suggests the part functions as a sliding-fit"
+      ]
+    }
+  },
+  "mppa": {
+    "macro_sequence": [
+      {
+        "step": 1,
+        "feature_id": 0,
+        "feature_type": "flat_surface",
+        "reason": "Machine the basic shape first \u2014 provides stable reference for all subsequent operations."
+      },
+      {
+        "step": 2,
+        "feature_id": 1,
+        "feature_type": "through_hole",
+        "reason": "Through holes are simpler features; drill after reference surface; can reuse same drill bit."
+      },
+      {
+        "step": 3,
+        "feature_id": 2,
+        "feature_type": "through_hole",
+        "reason": "Symmetric hole \u2014 process in same setup as hole #1."
+      },
+      {
+        "step": 4,
+        "feature_id": 3,
+        "feature_type": "rectangular_through_slot",
+        "reason": "Slots pass through entire part; machine after through holes (holes serve as datum)."
+      },
+      {
+        "step": 5,
+        "feature_id": 4,
+        "feature_type": "rectangular_through_slot",
+        "reason": "Symmetric slot \u2014 process symmetrically in same setup as slot #1."
+      },
+      {
+        "step": 6,
+        "feature_id": 5,
+        "feature_type": "rectangular_pocket",
+        "reason": "Pockets at slot intersections require slots to be finished first as reference."
+      }
+    ],
+    "sequence_notes": "Basic shape first, then holes, then slots, then pockets. Surface treatment applied last. Deburring after rough stages.",
+    "ordered_features": [
+      {
+        "feature_id": 0,
+        "feature_type": "flat_surface",
+        "face_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "description": "Main reference flat surface (top/bottom), area \u2248 large",
+        "macro_step": 1,
+        "macro_reason": "Machine the basic shape first \u2014 provides stable reference for all subsequent operations."
+      },
+      {
+        "feature_id": 1,
+        "feature_type": "through_hole",
+        "face_ids": [
+          10,
+          11
+        ],
+        "description": "Through hole #1, central axis short side, left",
+        "macro_step": 2,
+        "macro_reason": "Through holes are simpler features; drill after reference surface; can reuse same drill bit."
+      },
+      {
+        "feature_id": 2,
+        "feature_type": "through_hole",
+        "face_ids": [
+          10,
+          11
+        ],
+        "description": "Through hole #2, central axis short side, right",
+        "macro_step": 3,
+        "macro_reason": "Symmetric hole \u2014 process in same setup as hole #1."
+      },
+      {
+        "feature_id": 3,
+        "feature_type": "rectangular_through_slot",
+        "face_ids": [
+          13,
+          14,
+          15
+        ],
+        "description": "Rectangular slot #1, long side left",
+        "macro_step": 4,
+        "macro_reason": "Slots pass through entire part; machine after through holes (holes serve as datum)."
+      },
+      {
+        "feature_id": 4,
+        "feature_type": "rectangular_through_slot",
+        "face_ids": [
+          13,
+          14,
+          15
+        ],
+        "description": "Rectangular slot #2, long side right",
+        "macro_step": 5,
+        "macro_reason": "Symmetric slot \u2014 process symmetrically in same setup as slot #1."
+      },
+      {
+        "feature_id": 5,
+        "feature_type": "rectangular_pocket",
+        "face_ids": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "description": "Rectangular pocket \u2014 4 pockets at slot intersections",
+        "macro_step": 6,
+        "macro_reason": "Pockets at slot intersections require slots to be finished first as reference."
+      }
+    ]
+  },
+  "sppa": {
+    "detailed_route": [
+      {
+        "feature_id": 0,
+        "feature_type": "flat_surface",
+        "macro_step": 1,
+        "chain_id": "PC_FLAT_1",
+        "operations": [
+          {
+            "operation": "Rough Milling",
+            "machine_name": "Gantry Milling Machine",
+            "machine_model": "Doosan BM2045",
+            "cutter_name": "Carbide End Mill",
+            "cutter_model": "Kyocera PR1535"
+          },
+          {
+            "operation": "Semi-Finishing Milling",
+            "machine_name": "Horizontal Milling Machine",
+            "machine_model": "OKUMA MB-5000H",
+            "cutter_name": "High-Speed Steel End Mill",
+            "cutter_model": "Kennametal KSEM"
+          },
+          {
+            "operation": "Finishing Milling",
+            "machine_name": "CNC Milling Machine",
+            "machine_model": "DMG MORI NHX 5000",
+            "cutter_name": "Tungsten Carbide End Mill",
+            "cutter_model": "Sandvik CoroMill 316"
+          }
+        ]
+      },
+      {
+        "feature_id": 1,
+        "feature_type": "through_hole",
+        "macro_step": 2,
+        "chain_id": "PC_HOLE_4",
+        "operations": [
+          {
+            "operation": "Drilling (Reaming)",
+            "machine_name": "Radial Drill",
+            "machine_model": "Z3040",
+            "cutter_name": "Drill Bit",
+            "cutter_model": "Kyocera KSD30"
+          },
+          {
+            "operation": "Precision Boring",
+            "machine_name": "Boring Machine",
+            "machine_model": "TPX6111B",
+            "cutter_name": "Carbide Precision Boring Tool",
+            "cutter_model": "Mitsubishi BORING"
+          }
+        ]
+      },
+      {
+        "feature_id": 3,
+        "feature_type": "rectangular_through_slot",
+        "macro_step": 4,
+        "chain_id": "PC_SLOT_1",
+        "operations": [
+          {
+            "operation": "Rough Milling",
+            "machine_name": "Gantry Milling Machine",
+            "machine_model": "Doosan BM2740",
+            "cutter_name": "Carbide End Mill",
+            "cutter_model": "Mitsubishi APX4000"
+          },
+          {
+            "operation": "Semi-Finishing Milling",
+            "machine_name": "Horizontal Milling Machine",
+            "machine_model": "OKUMA MB-5000H",
+            "cutter_name": "High-Speed Steel End Mill",
+            "cutter_model": "Kyocera MEGACOAT"
+          },
+          {
+            "operation": "Finishing Milling",
+            "machine_name": "CNC Milling Machine",
+            "machine_model": "DMG MORI NHX 5000",
+            "cutter_name": "Tungsten Carbide End Mill",
+            "cutter_model": "Sandvik CoroMill 316"
+          },
+          {
+            "operation": "Ultra-Fine Milling",
+            "machine_name": "Ultra-Precision CNC Milling Machine",
+            "machine_model": "Makino F5",
+            "cutter_name": "Ceramic Tool",
+            "cutter_model": "Kyocera PV720"
+          }
+        ]
+      },
+      {
+        "feature_id": 5,
+        "feature_type": "rectangular_pocket",
+        "macro_step": 6,
+        "chain_id": "PC_POCKET_1",
+        "operations": [
+          {
+            "operation": "Rough Milling",
+            "machine_name": "Gantry Milling Machine",
+            "machine_model": "Doosan BM2740",
+            "cutter_name": "Carbide End Mill",
+            "cutter_model": "Mitsubishi APX4000"
+          },
+          {
+            "operation": "Semi-Finishing Milling",
+            "machine_name": "Horizontal Milling Machine",
+            "machine_model": "OKUMA MB-5000H",
+            "cutter_name": "High-Speed Steel End Mill",
+            "cutter_model": "Kyocera MEGACOAT"
+          },
+          {
+            "operation": "Finishing Milling",
+            "machine_name": "CNC Milling Machine",
+            "machine_model": "DMG MORI NHX 5000",
+            "cutter_name": "Tungsten Carbide End Mill",
+            "cutter_model": "Sandvik CoroMill 316"
+          },
+          {
+            "operation": "Ultra-Fine Milling",
+            "machine_name": "Ultra-Precision CNC Milling Machine",
+            "machine_model": "Makino F5",
+            "cutter_name": "Ceramic Tool",
+            "cutter_model": "Kyocera PV720"
+          }
+        ]
+      }
+    ],
+    "notes": "Process chains from knowledge graph. Chains selected for Ra=0.8-1.6 \u03bcm, IT7-IT8 requirements."
+  },
+  "poea": {
+    "final_route": [
+      {
+        "step_number": 1,
+        "feature": "flat_surface",
+        "operation": "Processing the Basic Shape of the Workpiece - Rough Milling",
+        "machine_name": "Gantry Milling Machine",
+        "machine_model": "Doosan BM2045",
+        "cutter_name": "Carbide End Mill",
+        "cutter_model": "Kyocera PR1535",
+        "notes": "Establish reference surface; remove bulk material quickly."
+      },
+      {
+        "step_number": 2,
+        "feature": "rectangular_through_slot",
+        "operation": "Processing Two Rectangular Channels - Rough Milling",
+        "machine_name": "Gantry Milling Machine",
+        "machine_model": "Doosan BM2740",
+        "cutter_name": "Carbide End Mill",
+        "cutter_model": "Mitsubishi APX4000",
+        "notes": "Both slots in one setup \u2014 symmetric clamping."
+      },
+      {
+        "step_number": 3,
+        "feature": "rectangular_pocket",
+        "operation": "Processing Four Rectangular Pockets - Rough Milling",
+        "machine_name": "Gantry Milling Machine",
+        "machine_model": "Doosan BM2740",
+        "cutter_name": "Carbide End Mill",
+        "cutter_model": "Mitsubishi APX4000",
+        "notes": "All four pockets in one setup."
+      },
+      {
+        "step_number": 4,
+        "feature": "all",
+        "operation": "Deburring",
+        "machine_name": "Manual",
+        "machine_model": "Manual",
+        "cutter_name": "Deburring Tool",
+        "cutter_model": "Standard",
+        "notes": "Remove burrs from rough milling before semi-finish."
+      },
+      {
+        "step_number": 5,
+        "feature": "flat_surface",
+        "operation": "Processing the Basic Shape - Semi-Finishing Milling",
+        "machine_name": "Horizontal Milling Machine",
+        "machine_model": "OKUMA MB-5000H",
+        "cutter_name": "High-Speed Steel End Mill",
+        "cutter_model": "Kennametal KSEM",
+        "notes": "Achieve IT9 accuracy on reference surface."
+      },
+      {
+        "step_number": 6,
+        "feature": "rectangular_through_slot",
+        "operation": "Processing Two Rectangular Channels - Semi-Finishing Milling",
+        "machine_name": "Horizontal Milling Machine",
+        "machine_model": "OKUMA MB-5000H",
+        "cutter_name": "High-Speed Steel End Mill",
+        "cutter_model": "Kyocera MEGACOAT",
+        "notes": "Maintain surface finish uniformity."
+      },
+      {
+        "step_number": 7,
+        "feature": "rectangular_pocket",
+        "operation": "Processing Four Rectangular Pockets - Semi-Finishing Milling",
+        "machine_name": "Horizontal Milling Machine",
+        "machine_model": "OKUMA MB-5000H",
+        "cutter_name": "High-Speed Steel End Mill",
+        "cutter_model": "Kyocera MEGACOAT",
+        "notes": ""
+      },
+      {
+        "step_number": 8,
+        "feature": "all",
+        "operation": "Cleaning",
+        "machine_name": "Manual",
+        "machine_model": "Manual",
+        "cutter_name": "Cleaning Tool",
+        "cutter_model": "Standard",
+        "notes": "Remove chips and coolant residue before finish milling."
+      },
+      {
+        "step_number": 9,
+        "feature": "flat_surface",
+        "operation": "Processing the Basic Shape - Finishing Milling",
+        "machine_name": "CNC Milling Machine",
+        "machine_model": "DMG MORI NHX 5000",
+        "cutter_name": "Tungsten Carbide End Mill",
+        "cutter_model": "Sandvik CoroMill 316",
+        "notes": "Achieve Ra 0.8-1.6 \u03bcm, IT7-IT8."
+      },
+      {
+        "step_number": 10,
+        "feature": "rectangular_through_slot",
+        "operation": "Processing Two Rectangular Channels - Finishing Milling",
+        "machine_name": "CNC Milling Machine",
+        "machine_model": "DMG MORI NHX 5000",
+        "cutter_name": "Tungsten Carbide End Mill",
+        "cutter_model": "Sandvik CoroMill 316",
+        "notes": ""
+      },
+      {
+        "step_number": 11,
+        "feature": "rectangular_pocket",
+        "operation": "Processing Four Rectangular Pockets - Finishing Milling",
+        "machine_name": "CNC Milling Machine",
+        "machine_model": "DMG MORI NHX 5000",
+        "cutter_name": "Tungsten Carbide End Mill",
+        "cutter_model": "Sandvik CoroMill 316",
+        "notes": ""
+      },
+      {
+        "step_number": 12,
+        "feature": "through_hole",
+        "operation": "Processing Two Through Holes - Drilling (Reaming)",
+        "machine_name": "Radial Drill",
+        "machine_model": "Z3040",
+        "cutter_name": "Drill Bit",
+        "cutter_model": "Kyocera KSD30",
+        "notes": "Drill both holes in one setup."
+      },
+      {
+        "step_number": 13,
+        "feature": "through_hole",
+        "operation": "Processing Two Through Holes - Precision Boring",
+        "machine_name": "Boring Machine",
+        "machine_model": "TPX6111B",
+        "cutter_name": "Carbide Precision Boring Tool",
+        "cutter_model": "Mitsubishi BORING",
+        "notes": "Achieve IT7-IT8 on hole diameter."
+      },
+      {
+        "step_number": 14,
+        "feature": "all",
+        "operation": "Final Inspection",
+        "machine_name": "CMM",
+        "machine_model": "Zeiss CONTURA",
+        "cutter_name": "Probe",
+        "cutter_model": "Renishaw",
+        "notes": "Check all dimensions and surface quality against drawing."
+      }
+    ],
+    "route_summary": "The final route follows rough milling \u2192 semi-finish milling \u2192 finish milling \u2192 drilling \u2192 boring, grouping all operations of the same stage together to minimise machine and tool changes. Deburring and cleaning steps are inserted at stage transitions. The efficiency score Y = 42, substantially outperforming the typical route (Y = \u221210).",
+    "efficiency_report": "============================================================\nProcess Route Efficiency Evaluation Report\n============================================================\n\nRank 1: ROUTE_1 \u2014 Grouped by machining stage (rough\u2192semi-finish\u2192finish\u2192hole)\n  Machine changes (a): 8\n  Tool changes    (b): 9\n  Efficiency score Y = 100.0 - 8.0\u00d78 - 3.0\u00d79 = 9.0\n  Steps (14):\n     1. Rough Milling                  | Gantry Milling Machine (Doosan BM2045) | Carbide End Mill (Kyocera PR1535)\n     2. Rough Milling                  | Gantry Milling Machine (Doosan BM2740) | Carbide End Mill (Mitsubishi APX4000)\n     3. Rough Milling                  | Gantry Milling Machine (Doosan BM2740) | Carbide End Mill (Mitsubishi APX4000)\n     4. Deburring                      | Manual (Manual) | Deburring Tool (Standard)\n     5. Semi-Finishing Milling         | Horizontal Milling Machine (OKUMA MB-5000H) | HSS End Mill (Kennametal KSEM)\n     6. Semi-Finishing Milling         | Horizontal Milling Machine (OKUMA MB-5000H) | HSS End Mill (Kyocera MEGACOAT)\n     7. Semi-Finishing Milling         | Horizontal Milling Machine (OKUMA MB-5000H) | HSS End Mill (Kyocera MEGACOAT)\n     8. Cleaning                       | Manual (Manual) | Cleaning Tool (Standard)\n     9. Finishing Milling              | CNC Milling Machine (DMG MORI NHX 5000) | Tungsten Carbide End Mill (Sandvik CoroMill 316)\n    10. Finishing Milling              | CNC Milling Machine (DMG MORI NHX 5000) | Tungsten Carbide End Mill (Sandvik CoroMill 316)\n    11. Finishing Milling              | CNC Milling Machine (DMG MORI NHX 5000) | Tungsten Carbide End Mill (Sandvik CoroMill 316)\n    12. Drilling (Reaming)             | Radial Drill (Z3040) | Drill Bit (Kyocera KSD30)\n    13. Precision Boring               | Boring Machine (TPX6111B) | Carbide Precision Boring Tool (Mitsubishi BORING)\n    14. Final Inspection               | CMM (Zeiss CONTURA) | Probe (Renishaw)\n\nRank 2: ROUTE_2 \u2014 Feature-by-feature (flat\u2192slot\u2192pocket\u2192hole)\n  Machine changes (a): 9\n  Tool changes    (b): 9\n  Efficiency score Y = 100.0 - 8.0\u00d79 - 3.0\u00d79 = 1.0\n  Steps (10):\n     1. Rough Milling                  | Gantry Milling Machine (Doosan BM2045) | Carbide End Mill (Kyocera PR1535)\n     2. Semi-Finishing Milling         | Horizontal Milling Machine (OKUMA MB-5000H) | HSS End Mill (Kennametal KSEM)\n     3. Finishing Milling              | CNC Milling Machine (DMG MORI NHX 5000) | Tungsten Carbide End Mill (Sandvik CoroMill 316)\n     4. Rough Milling                  | Gantry Milling Machine (Doosan BM2740) | Carbide End Mill (Mitsubishi APX4000)\n     5. Semi-Finishing Milling         | Horizontal Milling Machine (OKUMA MB-5000H) | HSS End Mill (Kyocera MEGACOAT)\n     6. Finishing Milling              | CNC Milling Machine (DMG MORI NHX 5000) | Tungsten Carbide End Mill (Sandvik CoroMill 316)\n     7. Rough Milling                  | Gantry Milling Machine (Doosan BM2740) | Carbide End Mill (Mitsubishi APX4000)\n     8. Finishing Milling              | CNC Milling Machine (DMG MORI NHX 5000) | Tungsten Carbide End Mill (Sandvik CoroMill 316)\n     9. Drilling (Reaming)             | Radial Drill (Z3040) | Drill Bit (Kyocera KSD30)\n    10. Precision Boring               | Boring Machine (TPX6111B) | Carbide Precision Boring Tool (Mitsubishi BORING)\n\n============================================================\n  BEST ROUTE: ROUTE_1  (Y = 9.0)\n============================================================",
+    "best_route_id": "ROUTE_1",
+    "best_score": 9.0
+  },
+  "topsis": {
+    "closeness": [
+      0.41421356237236717,
+      0.5857864376258756
+    ],
+    "ranking": [
+      2,
+      1
+    ],
+    "d_pos": [
+      0.3333333333333333,
+      0.23570226039551584
+    ],
+    "d_neg": [
+      0.23570226039551584,
+      0.3333333333333333
+    ]
+  }
+}
